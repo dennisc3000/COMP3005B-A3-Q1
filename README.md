@@ -28,8 +28,11 @@ The above SQL schema is created in init.sql.
 ## Requirements
 
 PostgreSQL installed and running (default port 5432)
+
 Python 3.10+ installed
+
 This Python package:
+
 ```bash
 pip install "psycopg[binary]==3.2.*"
 ```
