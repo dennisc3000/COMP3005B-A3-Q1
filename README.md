@@ -50,12 +50,12 @@ CREATE DATABASE studentdb;
 \i init.sql
 ```
 
-3. Install the Python PostgresSQL driver:
+3. Open Windows Command Prompt, install the Python PostgresSQL driver:
 ```bash
 pip install "psycopg[binary]==3.2.*"
 ```
 
-4. Configure environment variables in *one Windows Command Prompt window and make sure these commands are entered one by one*
+4. Configure environment variables in *and make sure these commands are entered one by one*
 ```bash
 set PGHOST=localhost
 set PGPORT=5432
@@ -64,7 +64,7 @@ set PGUSER=postgres
 set PGPASSWORD=**your_password_here**
 ```
 
-5. Run the CRUD app: list shows the database's current state. *Make sure you run from the same window as you set the environment variables because they need to be set every time the app is run.*
+5. Run the CRUD app from the Windows CLI: list shows the database's current state. *Make sure you run from the same window as you set the environment variables because they need to be set every time the app is run.*
 ```bash
 py app.py list
 ```
