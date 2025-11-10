@@ -64,7 +64,12 @@ set PGUSER=postgres
 set PGPASSWORD=**your_password_here**
 ```
 
-5. Run the CRUD app from the Windows CLI: list shows the database's current state. *Make sure you run from the same window as you set the environment variables because they need to be set every time the app is run.*
+5. Test to ensure environment variables are set correctly
+```bash
+python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
+```
+
+5. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window as you set the environment variables because they need to be set every time the app is run.*
 ```bash
 py app.py list
 ```
