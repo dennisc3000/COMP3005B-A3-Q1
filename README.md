@@ -37,7 +37,7 @@ This Python package:
 pip install "psycopg[binary]==3.2.*"
 ```
 
-## Usage
+## Installation and Usage
 
 1. Create the database
 In pgAdmin: 
@@ -69,7 +69,7 @@ set PGPASSWORD=**your_password_here**
 python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
 ```
 
-5. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window that you set the environment variables because they need to be set every time the app is run.*
+6. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window that you set the environment variables because they need to be set every time the app is run.*
 ```bash
 py app.py list
 ```
@@ -88,3 +88,5 @@ Read: Display final state.
 ```bash
 py app.py
 ```
+
+
