@@ -69,13 +69,22 @@ set PGPASSWORD=**your_password_here**
 python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
 ```
 
-5. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window as you set the environment variables because they need to be set every time the app is run.*
+5. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window that you set the environment variables because they need to be set every time the app is run.*
 ```bash
 py app.py list
 ```
 
 Run a demo of a full CRUD cycle. It does the following:
-Displays current state. Add a sample student: Rachel Waring, email: rachelwaring@example.com, enrolment date: 2025-09-01. Update that student's email to rachelwaring317@example.com. Delete that student from database. Display final state.
+
+Read: Displays current state.
+
+Create: Create a sample student: Rachel Waring, email: rachelwaring@example.com, enrolment date: 2025-09-01.
+
+Update: Update that student's email to rachelwaring317@example.com.
+
+Delete: Delete that student from database.
+
+Read: Display final state.
 ```bash
 py app.py
 ```
