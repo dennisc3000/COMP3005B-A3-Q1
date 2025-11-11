@@ -27,7 +27,7 @@ The above SQL schema is created in init.sql.
 
 ## Requirements
 
-PostgreSQL installed and running (default port 5432)
+PostgreSQL installed and running (default port: 5432, default user: postsgres)
 
 Python 3.10+ installed
 
