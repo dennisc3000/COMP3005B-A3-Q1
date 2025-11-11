@@ -37,7 +37,34 @@ This Python package:
 pip install "psycopg[binary]==3.2.*"
 ```
 
-## Installation and Usage
+## Installation
+
+1. Clone the project and navigate into it:
+```bash
+git clone https://github.com/dennisc3000/COMP3005B-A3-Q1.git
+cd COMP3005B-A3-Q1
+```
+
+2. Install the Python PostgresSQL driver:
+```bash
+pip install "psycopg[binary]==3.2.*"
+```
+
+3. Configure environment variables *and make sure these commands are entered one by one*
+```bash
+set PGHOST=localhost
+set PGPORT=5432
+set PGDATABASE=studentdb
+set PGUSER=postgres
+set PGPASSWORD=**your_password_here**
+```
+
+4. Test to ensure environment variables are set correctly
+```bash
+python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
+```
+
+## Usage
 
 1. Create the database
 In pgAdmin: 
@@ -50,26 +77,9 @@ CREATE DATABASE studentdb;
 \i init.sql
 ```
 
-3. Open Windows Command Prompt, install the Python PostgresSQL driver:
-```bash
-pip install "psycopg[binary]==3.2.*"
-```
+6. Run the CRUD app *from the same CLI window that you set the environment variables in because they need to be set every time the app is run.*
 
-4. Configure environment variables in *and make sure these commands are entered one by one*
-```bash
-set PGHOST=localhost
-set PGPORT=5432
-set PGDATABASE=studentdb
-set PGUSER=postgres
-set PGPASSWORD=**your_password_here**
-```
-
-5. Test to ensure environment variables are set correctly
-```bash
-python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
-```
-
-6. Run the CRUD app from the Windows CLI. The following command shows the database's current state. *Make sure you run from the same window that you set the environment variables because they need to be set every time the app is run.*
+The following command shows the database's current state.
 ```bash
 py app.py list
 ```
