@@ -2,6 +2,10 @@
 
 Implements a PostgreSQL database using the provided schema and a Python app that connects to this database to perform specific CRUD (Create, Read, Update, Delete) operations.
 
+## Video demo link:
+
+https://www.youtube.com/watch?v=DHfgk-wNjcg
+
 ## Database Schema
 
 The database contains a single table named `students`:
