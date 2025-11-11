@@ -79,24 +79,42 @@ python -c "import psycopg; psycopg.connect() and print('Connection successful!')
 
 5. Run the CRUD app *from the same CLI window that you set the environment variables in because they need to be set every time the app is run.*
 
-The following command shows the database's current state.
+________________________________________________
+
+Show the database's current state:
+  ```bash
+  py app.py list
+  ```
+
+Add a new student to the database:
 ```bash
-py app.py list
+py app.py add "Rachel" "Waring" "rachelwaring@example.com" 2025-09-01
 ```
 
-The following command runs a demo of a full CRUD cycle.
+Update an existing student's email (need to know their student ID):
 ```bash
-py app.py
+py app.py update 4 "rachelwaring317@example.com"
 ```
 
-It does the following:
+Delete a student from the database (need to know their student ID):
+```bash
+py app.py delete 4
+```
 
-Read: Displays current state.
+Run a demo of a full CRUD cycle:
+  ```bash
+  py app.py
+  ```
 
-Create: Create a sample student: Rachel Waring, email: rachelwaring@example.com, enrolment date: 2025-09-01.
+  The demo does the following:
+  
+  Read: Displays current state.
+  
+  Create: Creates a sample student: Rachel Waring, email: rachelwaring@example.com, enrolment date: 2025-09-01.
+  
+  Update: Updates that student's email to rachelwaring317@example.com.
+  
+  Delete: Deletes that student from the database.
+  
+  Read: Displays final state.
 
-Update: Update that student's email to rachelwaring317@example.com.
-
-Delete: Delete that student from database.
-
-Read: Display final state.
