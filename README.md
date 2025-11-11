@@ -52,16 +52,7 @@ pip install "psycopg[binary]==3.2.*"
 
 ## Usage
 
-1. Create the database
-In pgAdmin: 
-```sql
-CREATE DATABASE studentdb;
-```
-
-2. Run the script
-```sql
-\i init.sql
-```
+1. Create a database in pgAdmin, make sure youn name it studentdb. Right click the database, open the query tool. Open file, browse to cloned repo folder, select init.sql. Run it and ensure the query returns sucessfully.
 
 3. Configure environment variables *and make sure these commands are entered one by one*
 ```bash
