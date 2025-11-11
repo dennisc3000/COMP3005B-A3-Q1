@@ -2,6 +2,9 @@
 
 Implements a PostgreSQL database using the provided schema and a Python app that connects to this database to perform specific CRUD (Create, Read, Update, Delete) operations.
 
+Name: Dennis Chen
+student# 101236818
+
 ## Video demo link:
 
 https://www.youtube.com/watch?v=DHfgk-wNjcg
