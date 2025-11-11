@@ -50,6 +50,19 @@ cd COMP3005B-A3-Q1
 pip install "psycopg[binary]==3.2.*"
 ```
 
+## Usage
+
+1. Create the database
+In pgAdmin: 
+```sql
+CREATE DATABASE studentdb;
+```
+
+2. Run the script
+```sql
+\i init.sql
+```
+
 3. Configure environment variables *and make sure these commands are entered one by one*
 ```bash
 set PGHOST=localhost
@@ -64,20 +77,7 @@ set PGPASSWORD=**your_password_here**
 python -c "import psycopg; psycopg.connect() and print('Connection successful!')"
 ```
 
-## Usage
-
-1. Create the database
-In pgAdmin: 
-```sql
-CREATE DATABASE studentdb;
-```
-
-2. Run the script
-```sql
-\i init.sql
-```
-
-6. Run the CRUD app *from the same CLI window that you set the environment variables in because they need to be set every time the app is run.*
+5. Run the CRUD app *from the same CLI window that you set the environment variables in because they need to be set every time the app is run.*
 
 The following command shows the database's current state.
 ```bash
