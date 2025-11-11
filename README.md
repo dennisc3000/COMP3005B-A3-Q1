@@ -84,7 +84,12 @@ The following command shows the database's current state.
 py app.py list
 ```
 
-Run a demo of a full CRUD cycle. It does the following:
+The following command runs a demo of a full CRUD cycle.
+```bash
+py app.py
+```
+
+It does the following:
 
 Read: Displays current state.
 
@@ -95,8 +100,3 @@ Update: Update that student's email to rachelwaring317@example.com.
 Delete: Delete that student from database.
 
 Read: Display final state.
-```bash
-py app.py
-```
-
-
