@@ -110,9 +110,9 @@ Run a demo of a full CRUD cycle:
   
   Read: Displays current state.
   
-  Create: Creates a sample student: Rachel Waring, email: rachelwaring@example.com, enrolment date: 2025-09-01.
+  Create: Creates a sample student: "Rachel Waring", email: "rachelwaring@example.com", enrolment date: 2025-09-01.
   
-  Update: Updates that student's email to rachelwaring317@example.com.
+  Update: Updates that student's email to "rachelwaring317@example.com"
   
   Delete: Deletes that student from the database.
   
